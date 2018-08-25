@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:onClick="missedShot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/background_1"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/background" />
+
+
+    <RelativeLayout
+        android:onClick="missedShot"
+        android:layout_width="212dp"
+        android:layout_height="60dp"
+        android:layout_gravity="right|top"
+        android:layout_alignParentRight="true"
+        tools:ignore="RtlHardcoded"> <!-- It's a rip port, we don't really need left/right stuff-->
+
+        <ImageView
+            android:onClick="missedShot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/counter"
+            android:contentDescription="@string/counter" />
+
+        <RelativeLayout
+            android:onClick="missedShot"
+            android:layout_width="wrap_content"
+            android:layout_height="31dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="81dp">
+
+            <LinearLayout
+                android:onClick="missedShot"
+                android:id="@+id/scorebox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent"
+                android:layout_alignParentLeft="true"> <!--It breaks if we remove the parent-->
+
+                <ImageView
+                    android:onClick="missedShot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/custom_0"
+                    tools:ignore="ContentDescription" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:onClick="missedShot"
+        android:layout_width="140dp"
+        android:layout_height="96dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom|center">
+        <ImageView
+            android:onClick="missedShot"
+            android:layout_width="140dp"
+            android:layout_height="96dp"
+            app:srcCompat="@drawable/timeleft"
+            android:contentDescription="@string/time_left" />
+
+        <RelativeLayout
+            android:onClick="missedShot"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="26dp"
+            tools:ignore="RtlHardcoded">
+
+            <LinearLayout
+                android:onClick="missedShot"
+                android:id="@+id/timerbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal"
+                android:layout_alignParentLeft="true"
+                tools:ignore="UselessParent">
+
+                <ImageView
+                    android:onClick="missedShot"
+                    android:id="@+id/leftDigit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/timer_6"
+                    android:contentDescription="@string/left_digit" />
+
+                <ImageView
+                    android:onClick="missedShot"
+                    android:id="@+id/rightDigit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/timer_0"
+                    android:contentDescription="@string/right_digit" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:onClick="missedShot"
+        android:id="@+id/spawnbox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <declare-styleable name="SpriteView">
+        <attr name="spriteType" format="string"/>
+    </declare-styleable>
+    <declare-styleable name="ExplosionView">
+        <attr name="explosionType" format="string"/>
+        <attr name="CenterX" format="integer"/>
+        <attr name="CenterY" format="integer"/>
+    </declare-styleable>
+</resources>
